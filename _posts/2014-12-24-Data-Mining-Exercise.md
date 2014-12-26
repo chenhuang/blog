@@ -3,8 +3,6 @@ layout: post
 title: Data Mining Exercise
 ---
 
-# Data Mining Exercise
-
 ## Introduction
 
 This is an exercise project to fulfill the requirement of a data scientist job interview. The task is to conduct exploratory data analysis on a 72M CSV formatted dataset. The data set contains roughly 10k data points, with 561 numerical features, and are labelled into 6 categories. 
