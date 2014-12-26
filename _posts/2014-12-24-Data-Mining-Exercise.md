@@ -1,3 +1,8 @@
+---
+layout: post
+title: Data Mining Exercise
+---
+
 # Data Mining Exercise
 
 ## Introduction
