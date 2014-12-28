@@ -18,8 +18,6 @@ Skills:
 
 Tools and libraries: 
 
-- __Python__:
-    - [__scikit-learn__]() package for _Clustering_. 
 - __R__:
     - [__class__](): _kNN_.
     - [__rpart__](): _Decision Tree_.
@@ -35,8 +33,7 @@ To start with, the data contains 10299 observations, 561 features, each feature 
 
 In order to have a quick understanding of the features and categories. Principle Component Analysis (PCA) is conducted on the data matrix. Results can be seen in TODO: __plot 1__. __plot 1__  shows the relation between features and labels. As the plot shows, feature comp1 seperates the dataset into two major components at the cut-off value of 0. Each components have 3 labels. comp1 and comp2 shows that data under each label roughly roughly follows 2d gaussian distributions.  
 
-// Insert plot pca_comp1_comp2.pdf or plot app here. 
-
+<iframe id="PCA_plot" src="https://chenhuang.shinyapps.io/pca_app/" style="border: none; width: 100%; height: 650px" frameborder="0"></iframe>
 
 ## Classification
 
@@ -50,7 +47,7 @@ A popular non-linear classification is [K-nearest neighbors(KNN)](http://en.wiki
 
 Next I used the [decision tree]() method. The benefits of using decision tree over KNN is that it only uses a small number of features to predict, so it's computational efficient. Also since it selects features to use based on how much information each feature provides, it assign weights on features by their importance. 
 
-The plot below shows the relation between the size of tree and the relative error rate. The error rate improves slowly after 7 splits, and even slower after around 33 splits. So we prune the tree up until level 7. Examing the performance with 10-fold-cross vlaidation with 7 nodes gives a precision of 0.80766, with 33 nodes gives a precision of 0.949132. Results of the trees can be seen below.TODO: put plots here. 
+The plot below shows the relation between the size of tree and the relative error rate. The error rate improves slowly after 7 splits, and even slower after around 33 splits. So we prune the tree up until level 7. ![Decision Tree Error Rate Change]({{ site.baseurl }}/images/2014-12-24/decision_tree.jpg) Examing the performance with 10-fold-cross vlaidation with 7 nodes gives a precision of 0.80766, with 33 nodes gives a precision of 0.949132. Results of the trees can be seen below.TODO: put plots here. 
 
 ### Random Forest
 
@@ -74,8 +71,11 @@ I built a 2-layer neural network, with 10 hidden units, and softmax tranformatio
 
 ## Clustering
 
-For the task of clustering, I choose to use Python's skit-learn package for performance reasons. 
+Clustering is an unsupervised technology that partitions a dataset. The goal of clustering is to identify partitions of data such that data points within each partition are close in distance compared with that of outside of partition. 
 
+### K-means
+
+### Hierarchical Clustering
 
 
 ## Validation and Summary
